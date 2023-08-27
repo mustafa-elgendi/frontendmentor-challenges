@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+:root{
+    --margin-bottom: 15px;
+}
+.container{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+section{
+    width: 332px;
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img{
+    width: 302px;
+    height: 302px;
+    margin-bottom: var(--margin-bottom);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.ethimg{
+    width: 100%;
+    height: inherit;
+}
+.view{
+    display: none;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:  rgba(0, 255, 247, .5);;
+}
+.view img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+.img:hover > .view{
+    display: block;
+    cursor: pointer;
+}
+h1{
+    margin-bottom: var(--margin-bottom);
+}
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.ethtxt{
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: var(--margin-bottom);
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: var(--margin-bottom);
+}
+.value{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.value img{
+    width: 11px;
+    height: 18px;
+    margin-right: 5px;
+}
+.value p{
+    color: hsl(178, 100%, 50%);
+}
+.days{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.days img{
+    display: inline;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+.days p{
+    color: hsl(215, 51%, 70%);
+}
+hr{
+    margin-bottom: var(--margin-bottom);
+    border: 1px solid hsl(215, 51%, 70%);
+    opacity: .2;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+.profile img{
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile p{
+    color: hsl(215, 51%, 70%);
+    margin-right: 10px;
+    
+}
+.profile span{
+    color: white;
+    margin-right: 10px;
+}
+.profile span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
