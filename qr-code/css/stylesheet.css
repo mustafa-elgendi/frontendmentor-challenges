@@ -16,13 +16,16 @@ body{
   font-family: 'Outfit', sans-serif;
 }
 main{
+  width: 100%;
   padding: 20px;
-  margin: auto;
-  margin-top: 50px;
   width: calc(576px / 2);
   background-color: white;
   border-radius: 20px;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 img{
   display: block;
