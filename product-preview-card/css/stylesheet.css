@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+:root{
+  --color-Dark-cyan: hsl(158, 36%, 37%);
+  --color-very-Dark-cyan: hsl(158, 36%, 17%);
+  --color-Cream: hsl(30, 38%, 92%);
+  --color-Very-dark-blue: hsl(212, 21%, 14%);
+  --color-Dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-White: hsl(0, 0%, 100%);
+  --font-family-Montserrat: 'Montserrat', sans-serif;
+  --font-family-Fraunces: 'Fraunces', sans-serif;
+  --font-size-p: 14px;
+}
+.container{
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  background-color: var(--color-Cream);
+}
+main{
+  width: 345px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@media (min-width:632px) {
+  main{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    width: fit-content;
+    margin: 0;
+
+  }  
+}
+main .section-img{
+  width: 100%;
+  height: 240px;
+  background-image: url("../images/image-product-mobile.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media (min-width:632px) {
+  main .section-img{
+    background-image: url("../images/image-product-desktop.jpg");
+    height: 450px;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+main .section-txt{
+  background-color: var(--color-White);
+  padding: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@media (min-width:632px) {
+  main .section-txt{
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+main .section-txt h2{
+  font-family: var(--font-family-Montserrat);
+  color: var(--color-Dark-grayish-blue);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 500;
+}
+main .section-txt h1{
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: var(--font-family-Fraunces);
+  color: var(--color-Very-dark-blue);
+}
+main .section-txt p{
+  margin-top: 15px;
+  font-family: var(--font-family-Montserrat);
+  font-size: var(--font-size-p);
+  color: var(--color-Dark-grayish-blue);
+  line-height: 20px;
+}
+main .section-txt .price{
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+}
+main .section-txt .price h3{
+  color: var(--color-Dark-cyan);
+  font-size: 2em;
+  font-family: var(--font-family-Fraunces);
+  padding-right: 20px;
+}
+main .section-txt .price h4{
+  font-family: var(--font-family-Montserrat);
+  font-size: var(--font-size-p);
+  color: var(--color-Dark-grayish-blue);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+main .section-txt button{
+  width: 100%;
+  background-color: var(--color-Dark-cyan);
+  border: none;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+}
+main .section-txt button:hover{
+  background-color: var(--color-very-Dark-cyan);
+}
+main .section-txt button a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main .section-txt button img{
+  width: 15px;
+  height: 16px;
+  margin-right: 10px;
+}
+main .section-txt button p{
+  margin: 0;
+  color: var(--color-White);
+  font-weight: 600;
+}
